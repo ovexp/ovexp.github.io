@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="OVExp: Open Vocabulary Exploration for Object-Oriented Navigation">
+  <meta name="keywords" content="OVExp">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OVExp: Open Vocabulary Exploration for Object-Oriented Navigation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+<section class="hero" >
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">OVExp: Open Vocabulary Exploration for Object-Oriented Navigation</h1>
+          <style>
+            .corresponding-author-sign {
+                color: red; /* Change color as needed */
+                font-size: 1.0em; /* Adjust font size as needed */
+                vertical-align: super; /* Align the sign as superscript */
+            }
+          </style>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Meng Wei</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="">Tai Wang</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="">Yilun Chen</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Hanqing Wang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Jiangmiao Pang</a><sup>2</sup><span class="corresponding-author-sign">*</span>,
+            </span>
+            <span class="author-block">
+              <a href="">Xihui Liu</a><sup>1</sup><span class="corresponding-author-sign">*</span>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Hong Kong,</span>
+            <span class="author-block"><sup>2</sup>Shanghai AI Laboratory</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/OpenRobotLab/OVExp"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/OpenRobotLab/OVExp"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser" style="width: 100%">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."
+                 style="width: 100%; height: auto;"/>
+      <h2 class="subtitle has-text-centered">
+        <span style="font-weight: bold;">OVExp</span> enables Open Vocabulary Exploration in object-oriented navigation. Trained with a limited set of object goals, it generalizes effectively to unseen objects, image goals, and novel scenes, demonstrating robust versatility in diverse navigation tasks.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Object-oriented embodied navigation aims to locate specific objects, defined by category or depicted in images. Existing methods often struggle to generalize to open vocabulary goals without extensive training data. 
+            While recent advances in Vision-Language Models (VLMs) offer a promising solution by extending object recognition beyond predefined categories, efficient goal-oriented exploration becomes more challenging in an open vocabulary setting.
+            We introduce <span style="font-weight: bold;">OVExp</span>, a learning-based framework that integrates VLMs for Open-Vocabulary Exploration. <span style="font-weight: bold;">OVExp</span> constructs scene representations by encoding observations with VLMs and projecting them onto top-down maps for goal-conditioned exploration. Goals are encoded in the same VLM feature space, and a lightweight transformer-based decoder predicts target locations while maintaining versatile representation abilities.
+            To address the impracticality of fusing dense pixel embeddings with full 3D scene reconstruction for training, we propose constructing maps using low-cost semantic categories and transforming them into CLIP's embedding space via the text encoder. The simple but effective design of <span style="font-weight: bold;">OVExp</span> significantly reduces computational costs and demonstrates strong generalization abilities to various navigation settings.
+            Experiments on established benchmarks show <span style="font-weight: bold;">OVExp</span> outperforms previous zero-shot methods, can generalize to diverse scenes, and handle different goal modalities.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="hero teaser" style="width: 100%">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Method</h2>
+      <img src="./static/images/overview.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."
+                 style="width: 100%; height: auto;"/>
+      <h2 class="content has-text-justified">
+        The overall framework of <span style="font-weight: bold;">OVExp</span> for open vocabulary object-oriented exploration. 
+        <span style="font-weight: bold;">OVExp</span> can accept either language-based or vision-based maps as input and accommodates textual and visual object goals.
+        This flexibility is achieved by leveraging LSeg's open-vocabulary pixel embeddings and the joint visual-language embedding space of CLIP, allowing the system to effectively interpret and navigate towards a wide range of goals. 
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-4">Zero-Shot Object-Goal Navigation Videos from HM3D</h2>
+    <div style="display: flex; justify-content: center;">
+      <video  height="90%" width="90%" controls onclick="this.play()">
+        <source src="./static/videos/00848-ziup5kvtCCR_13.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <video height="90%" width="90%" controls onclick="this.play()">
+        <source src="./static/videos/00853-5cdEh9F2hJL_39.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <video height="90%" width="90%" controls onclick="this.play()">
+        <source src="./static/videos/00813-svBbv1Pavdk_22.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-4">Cross-Dataset Object-Goal Navigation Videos from MP3D</h2>
+    <div style="display: flex; justify-content: center;">
+      <video  height="90%" width="90%" controls onclick="this.play()">
+        <source src="./static/videos/mp3d_2azQ1b91cZZ_0.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-4">Cross-Modality InstanceImage-Goal Navigation Videos from HM3D</h2>
+    <div style="display: flex; justify-content: center;">
+      <video  height="100%" width="100%" controls onclick="this.play()">
+        <source src="./static/videos/insimg_00810-CrMo8WxCyVb_123.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <!-- <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a> -->
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is borrowed from <a
+            href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> and licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <!-- <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
